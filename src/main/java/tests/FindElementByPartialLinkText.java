@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-class FindElementByClassPartialLinkText {
+public class FindElementByPartialLinkText {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -34,15 +34,5 @@ class FindElementByClassPartialLinkText {
         Thread.sleep(3000);
 
         driver.quit();
-
-
-
-
-
-
-
-
     }
-
-
 }
