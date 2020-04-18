@@ -42,4 +42,62 @@ public class ArrayList_RemoveSomeValues {
 
     }
 
+    /*
+    public static void main(String[] args) {
+
+		ArrayList<Integer> list = new ArrayList<>(Arrays.asList(0,1,2,3,4,5,100,101,102,130));
+
+		list.removeIf(p -> p>100);
+		System.out.println(list);
+
+		System.out.println(removeValues(list));
+		removeValues2(list);
+		removeValues3(list);
+
+		List<String> names = new ArrayList<>(Arrays.asList("Ahmed", "John", "Eric", "Ahmed"));
+​
+		names.removeIf(p -> p.equals("Ahmed"));
+
+		System.out.println(names);
+
+	}
+
+	public static ArrayList<Integer> removeValues(ArrayList<Integer> list){
+
+		ArrayList<Integer> list2 = new ArrayList<>();
+
+		for(int each:list) {
+			if(each <= 100) {
+				list2.add(each);
+			}
+		}
+		return list2;
+	}
+
+	public static void removeValues2(ArrayList<Integer> list) {
+
+		Iterator<Integer> it = list.iterator();
+
+		while(it.hasNext()) {
+			if(it.next()>100) {
+				it.remove();
+			}
+		}
+		System.out.println(list);
+	}
+​
+
+	public static void removeValues3(ArrayList<Integer> list) {
+
+		for(ListIterator<Integer> it=list.listIterator();it.hasNext();) {
+
+			if(it.next() > 100) {
+				it.remove();
+			}
+		}
+		System.out.println(list);
+	}
+
+     */
+
 }

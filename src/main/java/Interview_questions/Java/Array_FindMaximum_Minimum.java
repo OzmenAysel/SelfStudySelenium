@@ -23,8 +23,10 @@ public class Array_FindMaximum_Minimum {
     // Solution 2
     public static int findMax2(int[] arr) {
         int max = Integer.MIN_VALUE;
+      //  int max = 0;
+      //  int max = arr[0];
         for(int each: arr){
-            if(each>max){
+            if(each>max){  // min.Math(min,each);
                 max=each;
             }
         }

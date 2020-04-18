@@ -19,10 +19,15 @@ public class String_Reverse {
            reverse+=str.substring(i, i+1);
            //reverse+=str.charAt(i);
        }
+//       while(str.length()>0){
+//           reverse+=str.charAt(str.length()-1);
+//           str =str.substring(0,str.length()-1);
+//       }
         return reverse;
     }
+
     // solution 2:
-    public static String StrReverse2(String str){
+    public static String StrReverse2(String str) {
         return new StringBuffer(str).reverse().toString();
     }
 }

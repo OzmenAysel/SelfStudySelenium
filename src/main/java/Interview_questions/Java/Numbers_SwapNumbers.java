@@ -18,8 +18,14 @@ public class Numbers_SwapNumbers {
         System.out.println("a is :" + a);
         System.out.println("b is :" + b);
 
+        //Solution 3:
+//        int temp =a+b;
+//        a=temp-a;
+//        b=temp-a;
+//        System.out.println("a is :" + a);
+//        System.out.println("b is :" + b);
 
-        //solution 1:
+        //solution 2:
         int A = 10;
         int B = 20;
 
@@ -29,5 +35,7 @@ public class Numbers_SwapNumbers {
 
         System.out.println("A is :" + A);
         System.out.println("B is :" + B);
+
+
     }
 }

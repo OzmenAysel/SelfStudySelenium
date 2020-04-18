@@ -11,6 +11,7 @@ public class String_FrequencyOfCharacters {
 
     public static void main(String[] args) {
         String str = "AAABBCDD";
+        System.out.println(FrequencyOfChars(str));
         System.out.println(FrequencyOfChars1(str));
         System.out.println(FrequencyOfChars2(str));
         System.out.println(FrequencyOfChars3(str));
@@ -18,15 +19,30 @@ public class String_FrequencyOfCharacters {
         System.out.println(FrequencyOfChars5(str));
     }
 
+
+    // Hakan abi
+    public static String FrequencyOfChars(String str) {
+        String result ="";
+        while(str.length()>0){
+            int count = 0;
+            for(int i =0; i<str.length(); i++){
+                if(str.substring(i,i+1).contains(str.substring(0,1)))
+                    count++;
+            }
+            result+= str.substring(0,1)+count;
+            str = str.replaceAll(str.substring(0,1), "");
+        }
+        return result;
+    }
+
     //	solution 1:
     public static String FrequencyOfChars1(String str) {
         String nonDup = "";
         for (int i = 0; i < str.length(); i++) {
-            if (!nonDup.contains(str.substring(i, i + 1))) {
+            if (!nonDup.contains(str.substring(i, i + 1)))
                 nonDup += str.substring(i, i + 1);
-            }
         }
-        String expectedResult = "";
+        String result = "";
         for (int j = 0; j < nonDup.length(); j++) {
             int count = 0;
             for (int i = 0; i < str.length(); i++) {
@@ -34,9 +50,9 @@ public class String_FrequencyOfCharacters {
                     count++;
                 }
             }
-                expectedResult += nonDup.charAt(j) + " " + count;
+                result += nonDup.charAt(j) + "" + count;
             }
-            return expectedResult;
+            return result;
         }
 
     //	solution 5:
@@ -51,7 +67,7 @@ public class String_FrequencyOfCharacters {
                     if (str.charAt(i) == str.charAt(j))
                         count++;
                 }
-                nonDup +=" "+count;
+                nonDup +=""+count;
             }
         }
         return nonDup;
@@ -68,7 +84,7 @@ public class String_FrequencyOfCharacters {
                     count++;
                 }
             }
-            expectedResult+=str.charAt(j)+" "+count;
+            expectedResult+=str.charAt(j)+""+count;
             str=str.replace(""+str.charAt(j), "");
         }
         return expectedResult;
@@ -77,15 +93,20 @@ public class String_FrequencyOfCharacters {
     //	solution 3:
     public static String FrequencyOfChars3(String str) {
 
-        String b = new LinkedHashSet<>(Arrays.asList(str.split(""))).toString();
-        b=b.replace(", ","").replace("[","").replace("]","");
+        String nunDup = new LinkedHashSet<>(Arrays.asList(str.split(""))).toString();
+        nunDup=nunDup.replace(", ","").replace("[","").replace("]","");
+
         String result ="";
-        for(int j=0; j<b.length();j++) {
-            int count=0;
-            for(int i=0; i<str.length(); i++)
-                if(str.substring(i,i+1).equals(str.substring(j, j+1)))
-                    count++;
-            result+=b.substring(j, j+1)+" "+count;
+        for(int i=0; i<nunDup.length();i++) {
+
+//            int count=0;      // Burasi yerine asagidaki iki satiri da yazabiliriz collection kullanarak
+//            for(int j=0; j<str.length(); j++)
+//                if(str.substring(j,j+1).equals(str.substring(i, i+1)))
+//                    count++;
+//            result+=nunDup.substring(i, i+1)+""+count;
+
+            int count = Collections.frequency(Arrays.asList(str.split("")), nunDup.substring(i,i+1));
+            result += nunDup.substring(i,i+1) + count;
         }
         return result;
     }
@@ -95,12 +116,12 @@ public class String_FrequencyOfCharacters {
         String nonDup ="";
         String result ="";
         for(int i=0; i < str.length(); i++)
-            if(! nonDup.contains(""+str.charAt(i)))
-                nonDup += ""+str.charAt(i);
+            if(! nonDup.contains(str.substring(i, i+1)))
+                nonDup += str.substring(i, i+1);
 
         for(int i=0; i < nonDup.length(); i++) {
             int num = Collections.frequency(Arrays.asList(str.split("")),""+nonDup.charAt(i));
-            result+=""+nonDup.charAt(i)+" "+num;
+            result+=""+nonDup.charAt(i)+num;
         }
          return result;
     }

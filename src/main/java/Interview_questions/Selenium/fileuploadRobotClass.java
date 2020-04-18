@@ -26,18 +26,7 @@ public class fileuploadRobotClass {
             robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
 
-//            robot.keyPress(KeyEvent.VK_DOWN);
-//            robot.keyRelease(KeyEvent.VK_DOWN);
-//            robot.keyPress(KeyEvent.VK_TAB);
-//            robot.keyRelease(KeyEvent.VK_TAB);
-//            robot.keyPress(KeyEvent.VK_ENTER);
-//            robot.keyRelease(KeyEvent.VK_ENTER);
-//            robot.keyPress(KeyEvent.VK_DOWN);
-//            robot.keyRelease(KeyEvent.VK_DOWN);
-//            robot.keyPress(KeyEvent.VK_TAB);
-//            robot.keyRelease(KeyEvent.VK_TAB);
-//            robot.keyPress(KeyEvent.VK_ENTER);
-//            robot.keyRelease(KeyEvent.VK_ENTER);
+
         }
     }
 
