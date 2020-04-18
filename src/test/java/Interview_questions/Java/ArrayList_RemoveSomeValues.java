@@ -1,6 +1,5 @@
 package Interview_questions.Java;
 
-
 import java.util.*;
 
 public class ArrayList_RemoveSomeValues {

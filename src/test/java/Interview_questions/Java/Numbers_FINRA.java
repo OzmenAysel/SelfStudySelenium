@@ -1,7 +1,5 @@
 package Interview_questions.Java;
 
-import java.util.Arrays;
-
 public class Numbers_FINRA {
     /*
 	Write a method which prints out the numbers from 1 to 30 but for numbers which are a multiple of 3, print "FIN"

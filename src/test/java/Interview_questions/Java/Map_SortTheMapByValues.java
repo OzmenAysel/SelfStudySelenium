@@ -1,9 +1,5 @@
 package Interview_questions.Java;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 public class Map_SortTheMapByValues {
 //    Write a method that can sort the Map by values
 //

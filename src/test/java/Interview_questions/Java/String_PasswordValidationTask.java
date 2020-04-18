@@ -1,7 +1,5 @@
 package Interview_questions.Java;
 
-import org.jsoup.select.Evaluator;
-
 public class String_PasswordValidationTask {
     /*1. Write a return method that can verify if a password is valid or not.
 		requirements:

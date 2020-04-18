@@ -1,7 +1,5 @@
 package Interview_questions.Java;
 
-import org.testng.annotations.Test;
-
 import java.util.Arrays;
 
 public class Array_FindMaximum_Minimum {

@@ -1,9 +1,7 @@
 package Interview_questions.Java;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Array_Sort_Descending {

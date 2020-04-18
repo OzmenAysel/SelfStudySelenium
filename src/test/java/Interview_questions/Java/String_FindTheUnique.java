@@ -1,7 +1,6 @@
 package Interview_questions.Java;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 public class String_FindTheUnique {

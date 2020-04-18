@@ -1,7 +1,5 @@
 package Interview_questions.Java;
 
-import java.sql.SQLOutput;
-
 public class Numbers_SwapNumbers {
 
 

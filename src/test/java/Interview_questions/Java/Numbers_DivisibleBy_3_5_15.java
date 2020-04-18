@@ -1,8 +1,5 @@
 package Interview_questions.Java;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Numbers_DivisibleBy_3_5_15 {
 //    Write a program that can print the numbers between 1 ~ 100 that can be divisible by 3, 5, and 15.
 //
