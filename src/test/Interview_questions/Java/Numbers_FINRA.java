@@ -11,15 +11,16 @@ public class Numbers_FINRA {
 
     public static void main(String[] args) {
 
-        FINRA();
-        FINRA2();
-      // FINRA3();
+      //  FINRA1();
+       // FINRA2();
+        FINRA3();
+       // FINRA4();
     }
 
     // Solution 1:
-    public static void FINRA(){
+    public static void FINRA1(){
         String result ="";
-        for(int i=1; i<30; i++){
+        for(int i=1; i<=30; i++){
             if(i%3==0 && i%5==0){
                 result+="FINRA ";
             }else if(i%3==0){
@@ -34,15 +35,32 @@ public class Numbers_FINRA {
     }
 
     // Solution 2:
-    public static void FINRA2(){
-        String result = "";
-        for(int i=1; i<30; i++){
-            result+=(i%5==0 && i%3==0)? "FINRA " : (i%3==0)? "FIN " : (i%5==0)? "RA " : i+" ";
+//    public static void FINRA2(){
+//        String result = "";
+//        for(int i=1; i<30; i++){
+//            result+=(i%5==0 && i%3==0)? "FINRA " : (i%3==0)? "FIN " : (i%5==0)? "RA " : i+" ";
+//        }
+//        System.out.println(result);
+//    }
+
+    // Hakan Abi
+    public static void FINRA3() {
+
+        for (int i = 1; i <= 30; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                if (i % 3 == 0)
+                    System.out.print("FIN");
+                if (i % 5 == 0)
+                    System.out.print("RA");
+                System.out.println();
+            } else {
+                System.out.println(i);
+            }
         }
-        System.out.println(result);
     }
 
-//    public static void FINRA3() {
+
+//    public static void FINRA4() {
 //
 //        String[] myarr= new String[30];
 //        for( int i=0; i <= 29; i++ )

@@ -2,7 +2,7 @@ package Interview_questions.Java;
 
 import java.sql.SQLOutput;
 
-public class Numbers_print_consecutive_numbers {
+public class Numbers_Codility_print_consecutive_numbers {
 
     /*Write a function:
 		that, given a positive integer N, prints the consecutive numbers from 1 to N, each on a separate line.
@@ -33,10 +33,14 @@ public class Numbers_print_consecutive_numbers {
 		....
 		 */
     public static void main(String[] args) {
-        System.out.println(solution(16));
+
+        int num = 30;
+        System.out.println(solution1(num));
+       // solution2(num);
     }
+
         //Solution:
-    public static String solution(int N) {
+    public static String solution1(int N) {
         String result = "";
         for (int i = 0; i <= N; i++) {
             if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
@@ -57,6 +61,23 @@ public class Numbers_print_consecutive_numbers {
                 result += i + "\n";
             }
             return result;
-
         }
+
+    // Hakan Abi
+    public static void solution2(int num) {
+
+        for (int i = 1; i <= num; i++) {
+            if (i % 2 == 0 || i % 3 == 0 || i % 5 == 0) {
+                if (i % 2 == 0)
+                    System.out.print("Codility");
+                if (i % 3 == 0)
+                    System.out.print("Test");
+                if (i % 5 == 0)
+                    System.out.print("Coders");
+                System.out.println();
+            } else {
+                System.out.println(num);
+            }
+        }
+    }
 }
