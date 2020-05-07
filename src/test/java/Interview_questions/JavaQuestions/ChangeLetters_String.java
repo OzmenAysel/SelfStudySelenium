@@ -3,10 +3,10 @@ package Interview_questions.JavaQuestions;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ClassChange_String {
+public class ChangeLetters_String {
 
         public static void main(String[] args) {
-            String str = " Do you  love  java? ";
+            String str = " Do you  love    java? ";
             System.out.println(changeLetters(str));
         }
         public static String changeLetters(String str) {

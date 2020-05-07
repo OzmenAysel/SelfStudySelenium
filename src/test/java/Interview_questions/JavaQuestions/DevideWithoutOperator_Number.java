@@ -41,13 +41,13 @@ public class DevideWithoutOperator_Number {
         }
     }
 
-         public static String divide3(int divident, int divisor) {  // Albert
+         public static String divide3(int dividend, int divisor) {  // Albert
             int quotient = 0;
             int remainder =0;
-            while(divident >= divisor){
-                divident = divident - divisor;
+            while(dividend >= divisor){
+                dividend = dividend - divisor;
                 quotient++;
-                remainder = divident;
+                remainder = dividend;
             }
         return "quotient = " + quotient + " remainder = " + remainder;
          }

@@ -2,7 +2,7 @@ package Interview_questions.JavaQuestions;
 
 import java.util.Arrays;
 
-public class Convert_String {
+public class Convert_StringToString {
 
     // How do you convert this string "CBA534FDE" to this "ABC345DEF" ?
 

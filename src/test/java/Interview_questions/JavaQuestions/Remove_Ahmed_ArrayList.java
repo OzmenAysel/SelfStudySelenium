@@ -78,7 +78,5 @@ public class Remove_Ahmed_ArrayList {
         });
         System.out.println(names5);
 
-
-        // Solution 4:
     }
     }
