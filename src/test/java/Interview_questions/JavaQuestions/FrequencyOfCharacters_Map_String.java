@@ -11,9 +11,6 @@ public class FrequencyOfCharacters_Map_String {
 
     public static void main(String[] args) {
         String str = "Hello word";
-
-
-
         String word = "aaaabbbbccccdef";
         FrequencyTest(word);
         FrequencyTestSeyfo(word);

@@ -11,10 +11,11 @@ public class JS_SendKeys {
 
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
-        driver.get("");
+
+        driver.get("https://www.google.com/");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("document.getElementBYID('User').value = 'www.goggle.com'");  // username
-        js.executeScript("document.getElementById('pass').value='tester'");  // password
+        js.executeScript("document.getElementById('User').value = 'www.goggle.com';");  // username
+        js.executeScript("document.getElementById('pass').value='tester';");  // password
     }
 }

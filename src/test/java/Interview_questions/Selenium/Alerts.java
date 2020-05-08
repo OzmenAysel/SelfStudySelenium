@@ -10,7 +10,7 @@ import utils.BrowserUtils;
 import utils.ConfigurationReader;
 
 
-public class JS_Alerts {
+public class Alerts {
 
     public static void main(String[] args) {
 
