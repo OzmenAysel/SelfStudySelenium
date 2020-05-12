@@ -9,7 +9,7 @@ public class StringConcept {
         String str1 = "Java";
         String str2 = "Java";
 
-        str2 = "Aysel";  // Now id number of str2 will change. it is pointing to "Aysel".
+        str2 = "Aysel";  // Now id number of str2 will change. it is pointing to "Aysel".pp
         String str3 = "C++";  // its id number will be different. value will be different (if we do debug, we can see)
 
         System.out.println(str1);

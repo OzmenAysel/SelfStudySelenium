@@ -5,14 +5,15 @@ public class ArmstrongNumbers_Number {
 //    Write a method that can check if a number is Armstrong  number
 
     public static void main(String[] args) {
-        System.out.println(ArmStrongNumber(370));
-        System.out.println(ArmStrongNumber2(370));
-        System.out.println(ArmStrongNumber3(370));
+        System.out.println(ArmStrongNumber1(153));
+        System.out.println(ArmStrongNumber2(153));
+        System.out.println(ArmStrongNumber3(153));
+        System.out.println(ArmStrongNumber4(153));
         int d=3;
         System.out.println(Math.pow(2, 2));
     }
 
-    public  static  boolean ArmStrongNumber(int  num) {//153 => 27+125+1=153
+    public  static  boolean ArmStrongNumber1(int num) {//153 => 27+125+1=153
       int a = 0, b = 0, c = num;
       while (num > 0) {//0
           a = num % 10;//1
@@ -48,6 +49,23 @@ public class ArmstrongNumbers_Number {
             temp = temp / 10;
         }
         if (num == sum) {
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean ArmStrongNumber4(int number){
+        // 153 --> 1*1*1   5*5*5    3*3*3   Don not forget--> 1 % 10 --> 1  BUT  1 / 10 --> 0
+        int cube= 0;
+        int remainder =0;
+        int t =number;
+
+        while(number > 0 ) {
+            remainder = number % 10;
+            number = number / 10;
+            cube = cube+(remainder*remainder*remainder);
+        }
+        if(t==cube){
             return true;
         }
         return false;
