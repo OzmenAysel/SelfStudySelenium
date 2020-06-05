@@ -11,8 +11,8 @@ public class FINRA_Number {
 
       //  FINRA1();
        // FINRA2();
-        FINRA3();
-       // FINRA4();
+      //  FINRA3();
+       FINRA4();
     }
 
     // Solution 1:
@@ -56,6 +56,21 @@ public class FINRA_Number {
             }
         }
     }
+
+    public static void FINRA4() {  // rebootcamp
+      for(int i = 0; i<=30; i++) {
+        String result = "";
+        if (i % 3 == 0)
+            result += "FIN ";
+        if (i % 5 == 0)
+            result += "RA ";
+        if (result.isEmpty()) {
+            System.out.print(i+" ");
+        } else {
+            System.out.print(result + " ");
+        }
+    }
+}
 
 
 //    public static void FINRA4() {

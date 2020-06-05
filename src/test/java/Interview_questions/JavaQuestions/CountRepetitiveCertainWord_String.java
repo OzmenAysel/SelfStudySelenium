@@ -11,9 +11,9 @@ public class CountRepetitiveCertainWord_String {
 
       //   String[] names ={"Java", "JavaScript", "Ruby", "C", "Python", "Java", "C"};
         String str = "Aysel     Aysel Saadet     Fatma Fatma     fatma";
-        FindDupElements(str);
+        //FindDupElements(str);
         FindDupElements2(str);
-        FindDupElements3(str);
+       // FindDupElements3(str);
 
         System.out.println("Finding Aysel");
         System.out.println(str.matches(".*Aysel.*")); // true
@@ -32,7 +32,38 @@ public class CountRepetitiveCertainWord_String {
         System.out.println(count);
     }
 
-    public static void FindDupElements2(String str) {      // Naveen
+    public static void FindDupElements2(String str) {  // rebootcamp
+        int count = 0;
+        str = str.toLowerCase();
+        while(str.contains("Aysel")){
+                count++;
+            str = str.replaceFirst("Aysel", "");
+            }
+        System.out.println(count);
+    }
+
+    public static void FindDupElements3(String str) {  // rebootcamp
+        int count = 0;
+        for (int i = 0; i<str.length()-6; i++) {
+            if(str.substring(i, i+6).equalsIgnoreCase("saaDET"))
+                count++;
+        }
+        System.out.println(count);
+
+    }
+
+        public static void FindDupElements4(String str) {     // ??????
+        String[] words = str.split("\\s");
+        HashSet<String> set = new HashSet<String>();
+        for (String each : words) {
+            if (!set.add(each)) {
+                System.out.println("Duplicate Element is : " + each);
+            }
+        }
+
+    }
+
+    public static void FindDupElements5(String str) {      // Naveen
         String[] words = str.trim().split("\\s+");
         Map<String, Integer> map = new HashMap<String, Integer>();
         for (String each : words) {
@@ -52,14 +83,5 @@ public class CountRepetitiveCertainWord_String {
 
     }
 
-    public static void FindDupElements3(String str) {     // ??????
-        String[] words = str.split("\\s");
-        HashSet<String> set = new HashSet<String>();
-        for (String each : words) {
-            if (!set.add(each)) {
-                System.out.println("Duplicate Element is : " + each);
-            }
-        }
 
-    }
 }

@@ -1,4 +1,4 @@
-package JavaPractice;
+package Interview_questions.JavaQuestions;
 
 import java.util.Arrays;
 

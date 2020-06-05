@@ -27,6 +27,7 @@ public class PasswordValidationTask_String {
                 HashUpper = password.matches(uppercase),
                 HashDigit = password.matches(numbers),
                 HashSpecial = password.matches(specialchars),
+
                 Valid = false;
         if(password.length()>=6 && !password.contains(" "))
             if(HashLower&&HashUpper&&HashDigit&&HashSpecial)

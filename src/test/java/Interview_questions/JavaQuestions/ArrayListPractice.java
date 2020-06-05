@@ -1,4 +1,4 @@
-package JavaPractice;
+package Interview_questions.JavaQuestions;
 
 import com.google.gson.internal.bind.util.ISO8601Utils;
 import org.w3c.dom.ls.LSOutput;

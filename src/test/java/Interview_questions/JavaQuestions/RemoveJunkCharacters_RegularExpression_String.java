@@ -2,6 +2,8 @@ package Interview_questions.JavaQuestions;
 
 // Naveen
 
+import org.openqa.selenium.Alert;
+
 public class RemoveJunkCharacters_RegularExpression_String {
 
     // How to remove Junk Characters
@@ -17,6 +19,8 @@ public class RemoveJunkCharacters_RegularExpression_String {
 
     public static String removeJunk(String str){
 
-        return str.replaceAll("[^a-zA-Z0-9]", "");
+        return str.replaceAll("[^a-zA-Z0-9]", "");  // 4String0123
+      //  return str.replaceAll("\\W", "");  // 4String0123
     }
+
 }

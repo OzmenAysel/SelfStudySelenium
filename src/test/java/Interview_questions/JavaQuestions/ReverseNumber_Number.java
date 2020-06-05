@@ -7,12 +7,14 @@ public class ReverseNumber_Number {
     public static void main(String[] args) {
 
         long number = 12345;
+
         reverseNumber1(number);
         System.out.println(reverseNumber2(number));
         System.out.println(reverseNumber3(number));
     }
 
     public static void reverseNumber1(long num){
+
         System.out.println(new StringBuffer(String.valueOf(num)).reverse());
     }
 
