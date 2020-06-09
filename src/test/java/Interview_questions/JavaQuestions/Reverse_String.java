@@ -13,10 +13,14 @@ public class Reverse_String {
 
     public static void main(String[] args) {
         String str = "ABCD";
-        System.out.println(StrReverse1(str));
-        System.out.println(StrReverse2(str));
-        System.out.println(StrReverse3(str));
-        System.out.println(StrReverseStream(str));
+        for(int i=str.length()-1; i>=0; i--){
+            System.out.print(str.charAt(i));
+        }
+
+//        System.out.println(StrReverse1(str));
+//        System.out.println(StrReverse2(str));
+//        System.out.println(StrReverse3(str));
+//        System.out.println(StrReverseStream(str));
 
     }
     // solution 1:

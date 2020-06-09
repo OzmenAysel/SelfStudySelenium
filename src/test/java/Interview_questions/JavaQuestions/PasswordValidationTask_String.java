@@ -12,8 +12,21 @@ public class PasswordValidationTask_String {
 		*/
     public static void main(String[] args) {
         String password = "123abc#@$AB";
-        System.out.println(PassWordValidation(password));
-        System.out.println(PassWordValidation2(password));
+//        System.out.println(PassWordValidation(password));
+//        System.out.println(PassWordValidation2(password));
+        System.out.println(PassWordvalidation_Short(password));
+    }
+
+    public static boolean PassWordvalidation_Short(String password) {
+        boolean HasLower = password.matches("(.*[a-z].*)"),
+                HasUpper = password.matches("(.*[A-Z].*)"),
+                HasDigits = password.matches("(.*[0-9].*)"),
+                HasSpecial = password.matches("(.*\\W.*)");
+
+        if (password.length() >= 6 && !password.contains(" ")
+                && HasLower && HasUpper && HasDigits && HasSpecial)
+            return true;
+        return false;
     }
 
     public static boolean PassWordValidation(String password){
@@ -61,4 +74,6 @@ public class PasswordValidationTask_String {
             return upperCaseCount > 0 && loverCaseCount > 0 && specialCharacterCount > 0 && digitCount > 0 ;
         }
     }
+
+
 }
