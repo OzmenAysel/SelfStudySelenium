@@ -2,10 +2,13 @@ package Interview_questions.JavaQuestions;
 
 // Albert
 
+import java.util.Arrays;
+
 public class RemoveExstraSpace_String {
 
     public static void main(String[] args) {
         String str = "Try  to     remove   extra     spaces.";
+
         removeExtraSpaces(str);
     }
 

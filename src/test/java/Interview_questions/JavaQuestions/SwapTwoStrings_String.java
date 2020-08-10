@@ -6,7 +6,7 @@ public class SwapTwoStrings_String {
          String str1 = "Zeynep";
          String str2 = "Bera";
 
-         System.out.println("before swapping: " + str1+" : "+str2);
+         System.out.println("after swapping: " + str1+" : "+str2);
 
          System.out.println("after swapping:");
          System.out.println(swap1(str1,str2));

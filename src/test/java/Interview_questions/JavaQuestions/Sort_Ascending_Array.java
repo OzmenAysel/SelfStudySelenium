@@ -13,8 +13,8 @@ Ex:	int[] arr = {10, 9, 8, 7};
     public static void main(String[] args) {
         int[] arr = {5, 9, 8, 7};
         System.out.println(Arrays.toString(Sort1(arr)));
-        System.out.println(Arrays.toString(Sort2(arr)));
-        System.out.println(Arrays.toString(Sort3(arr)));
+      //  System.out.println(Arrays.toString(Sort2(arr)));
+       // System.out.println(Arrays.toString(Sort3(arr)));
     }
 
     // min value of list
@@ -30,7 +30,7 @@ Ex:	int[] arr = {10, 9, 8, 7};
 
     // ArrayList
     public static int[] Sort1(int[] a) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (int each : a) {
             list.add(each);
         }

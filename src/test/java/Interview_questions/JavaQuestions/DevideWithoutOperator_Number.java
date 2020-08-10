@@ -2,13 +2,29 @@ package Interview_questions.JavaQuestions;
 
 public class DevideWithoutOperator_Number {
 
-	// Write a method that can divide two numbers without using division operator
+    // Write a method that can divide two numbers without using division operator
 
     public static void main(String[] args) {
-        divide1(2,12);
-        divide2(2,12);
-        System.out.println("divide3 method: "+divide3(2,12));
-        System.out.println("divide3 method: "+divide3(12,2));
+        divide1(2, 12);
+        System.out.println("==============================");
+        divide2(2, 12);
+        System.out.println("===============================");
+        divideMySolution(15, 2);
+    }
+
+    public static void divideMySolution(int a, int b) {
+        if (b == 0) {
+            System.out.println("Invalid number");
+        }else if(b>a){
+            System.out.println(a+" can not divide by "+b);
+        }
+        int count = 0;
+        while (a >= b) {
+            a = a - b;
+            count++;
+        }
+        System.out.println(count);
+        System.out.println("remainder is " + a);
     }
 
     // Solution:
@@ -27,7 +43,7 @@ public class DevideWithoutOperator_Number {
     }
 
     public static void divide2(int num1, int num2){
-        int result = 0;
+        int count = 0;
         if(num2==0) {
             System.out.println("Cannot divide by zero!");
         }else if(num1<num2){
@@ -35,20 +51,11 @@ public class DevideWithoutOperator_Number {
         }else {
             while (num1 >= num2) {
                 num1 -= num2;
-                result++;
+                count++;
             }
-            System.out.println(result + " with a remainder of " + num1);
+            System.out.println(count + " with a remainder of " + num1);
         }
     }
 
-         public static String divide3(int dividend, int divisor) {  // Albert
-            int quotient = 0;
-            int remainder =0;
-            while(dividend >= divisor){
-                dividend = dividend - divisor;
-                quotient++;
-                remainder = dividend;
-            }
-        return "quotient = " + quotient + " remainder = " + remainder;
-         }
+
 }

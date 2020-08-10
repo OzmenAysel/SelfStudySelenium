@@ -11,8 +11,18 @@ public class Find_Lenght_WithoutUsing_Length {
 
         String str = "Aysel Dalcicek";
 
+
+
         // solution 1
         System.out.println(str.lastIndexOf(""));
+
+        // My solution
+        int count1 =0;
+        for (int i=0; i<str.length(); i++){
+            count1++;
+        }
+        System.out.println(count1);
+
 
         // solution 2
         char[] ch = str.toCharArray();

@@ -4,8 +4,7 @@ public class Palindrome_Number {
 
     public static void main(String[] args) {
 
-        int num = 621;
-        System.out.println(palindromeNum(num));
+        System.out.println(palindromeNum(621));
         System.out.println(palindromeNum2(151));
         System.out.println(palindromeNum3(151));
 

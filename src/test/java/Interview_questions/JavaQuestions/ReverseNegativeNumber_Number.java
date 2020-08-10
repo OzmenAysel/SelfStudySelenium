@@ -8,6 +8,10 @@ public class ReverseNegativeNumber_Number {
     public static void main(String[] args) {
         int num = -2106;
         System.out.println(reverseNum(num));
+
+//        int number = 6789;
+//        String str = new StringBuilder(""+number).reverse().toString();
+//        System.out.println(str);
     }
 
 //    Solution:

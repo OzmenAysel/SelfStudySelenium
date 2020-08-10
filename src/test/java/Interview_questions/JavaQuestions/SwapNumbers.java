@@ -4,7 +4,6 @@ public class SwapNumbers {
 
 
     public static void main(String[] args) {
-
         //solution 1:
         int a = 5;
         int b = 10;

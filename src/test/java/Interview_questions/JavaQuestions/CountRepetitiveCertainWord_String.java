@@ -11,9 +11,9 @@ public class CountRepetitiveCertainWord_String {
 
       //   String[] names ={"Java", "JavaScript", "Ruby", "C", "Python", "Java", "C"};
         String str = "Aysel     Aysel Saadet     Fatma Fatma     fatma";
-        //FindDupElements(str);
+     //   FindDupElements(str);
         FindDupElements2(str);
-       // FindDupElements3(str);
+        //FindDupElements3(str);
 
         System.out.println("Finding Aysel");
         System.out.println(str.matches(".*Aysel.*")); // true
@@ -25,7 +25,7 @@ public class CountRepetitiveCertainWord_String {
         String[] words = str.trim().split("\\s+"); // Fazla bosluklarin onemsemez
         int count = 0;
         for (int i = 0; i < words.length; i++) {
-            if (words[i].equalsIgnoreCase("saaDET")) {
+            if (words[i].equalsIgnoreCase("aySEl")) {
                 count++;
             }
         }

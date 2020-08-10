@@ -26,9 +26,8 @@ public class FindTheUnique_String {
 
             int count = 0;
             for (int i = 0; i < str.length(); i++) {
-                if (arr[i].contains(arr[j])) {
+                if (arr[i].contains(arr[j]))
                     count++;
-                }
             }
             if (count == 1) {
                 unique += arr[j];
@@ -39,12 +38,9 @@ public class FindTheUnique_String {
 
     //solution 2:
     public static String unique2(String str) { // hakan abi
-
         char[] arr = str.toCharArray();
         String unique = "";
-
         for (int j = 0; j < str.length(); j++) {
-
             int count = 0;
             for (int i = 0; i < str.length(); i++) {
                 if (arr[i] == arr[j])
@@ -52,7 +48,6 @@ public class FindTheUnique_String {
             }
                 if (count == 1)
                     unique += arr[j];
-
         }
             return unique;
         }

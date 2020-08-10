@@ -4,16 +4,17 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 
 public class RemoveDuplicates_String {
-    /*
-		 *String -- Remove Duplicates
+      /*
+	     *String -- Remove Duplicates
 	Write a return method that can remove the duplicated values from String
 	Ex:  removeDup("AAABBBCCC")  ==> ABC
 		*/
 
     public static void main(String[] args) {
         String str="AAABBBCCC";
+
        System.out.println(removeDup1(str));
-    //   System.out.println(removeDup2(str));
+       System.out.println(removeDup2(str));
     }
 
     //Solution 1:

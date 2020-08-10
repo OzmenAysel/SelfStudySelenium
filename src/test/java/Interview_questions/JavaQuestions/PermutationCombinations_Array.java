@@ -17,11 +17,11 @@ public class PermutationCombinations_Array {
     public static void main(String[] args) {
         String str = "abc";
         char[] arr = str.toCharArray();
-        //printPermutation(arr);
+       // printPermutation(arr);
 
         // Hakan abi   // recursive
         for(int i = 0; i<arr.length; i++){
-            ArrayList<Character> abc = new ArrayList<Character>();
+            ArrayList<Character> abc = new ArrayList<>();
             for(char each : arr)
                 abc.add(each);
 
@@ -42,11 +42,8 @@ public class PermutationCombinations_Array {
     }
 
     public static void printPermutation(char[] ch) {
-
         for(String s: permutation(ch))
-
             System.out.println(Arrays.toString( s.toCharArray( ) )  );
-
     }
 
     public static Set<String> permutation(char[] ch) {

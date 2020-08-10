@@ -15,9 +15,11 @@ public class FindDuplicatesElement_Array {
         FindDupElements(names);
         FindDupElements2(names);
         FindDupElements3(names);
+
     }
 
-    // compare each element
+
+        // compare each element
     public static void FindDupElements(String[] arr) {  // worst approach  0(nxn) time complexity
 
         for (int i = 0; i < arr.length; i++) {
@@ -40,7 +42,7 @@ public class FindDuplicatesElement_Array {
         }
     }
 
-    // Using HashMap
+//    // Using HashMap
     public static void FindDupElements3(String[] arr) {  // 0(2n)
         Map<String, Integer> list = new HashMap<String, Integer>();
         for(String each: arr){

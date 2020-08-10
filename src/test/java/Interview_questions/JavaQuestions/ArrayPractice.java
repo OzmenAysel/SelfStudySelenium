@@ -69,6 +69,7 @@ public class ArrayPractice {
 
         // How do you search an array to check whether it contains the given element or not?
         // using Arrays.binarySearch() method
+        System.out.println("search the given element");
         int[] numbers = {13, 45, 66, 2, 300};
         System.out.println(Arrays.binarySearch(numbers,66)); // 2
 

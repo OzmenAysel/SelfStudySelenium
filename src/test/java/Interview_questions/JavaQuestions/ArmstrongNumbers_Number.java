@@ -3,6 +3,7 @@ package Interview_questions.JavaQuestions;
 public class ArmstrongNumbers_Number {
 
 //    Write a method that can check if a number is Armstrong  number
+    // kuplerin toplami
 
     public static void main(String[] args) {
         System.out.println(ArmStrongNumber1(153));
@@ -18,7 +19,7 @@ public class ArmstrongNumbers_Number {
       while (num > 0) {//0
           a = num % 10;//1
           num /= 10;//0
-          b = b + (a * a * a);//152+1=153
+          b = b + (a * a * a);  //152+1=153
       }
       if (c == b) {
           return true;
@@ -61,9 +62,9 @@ public class ArmstrongNumbers_Number {
         int t =number;
 
         while(number > 0 ) {
-            remainder = number % 10;
-            number = number / 10;
-            cube = cube+(remainder*remainder*remainder);
+            remainder = number % 10; // 3  5  1
+            number = number / 10;  // 15   1  0
+            cube = cube+(remainder*remainder*remainder); // 27  + 125  + 1 = 153
         }
         if(t==cube){
             return true;

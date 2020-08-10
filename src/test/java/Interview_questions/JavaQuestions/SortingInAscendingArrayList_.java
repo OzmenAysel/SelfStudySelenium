@@ -1,5 +1,7 @@
 package Interview_questions.JavaQuestions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SortingInAscendingArrayList_ {
@@ -7,32 +9,6 @@ public class SortingInAscendingArrayList_ {
    // Write a method that can sort the ArrayList in Ascending order without using the sort method
 
 
-
-   // Solution:
-
-    public static void SortingArrayListAsc(List<Integer> list) {
-
-        for (int i = 0; i < list.size(); i++) {
-
-            for (int j = 0; j < list.size(); j++) {
-
-                if (list.get(i) < list.get(j)) {
-
-                    Integer temp = list.get(i);
-
-                    list.set(i, list.get(j));
-
-                    list.set(j, temp);
-
-                }
-
-            }
-
-        }
-
-    }
-
-    /*
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(18,72,19));
         SortingArrayListAsc(list);
@@ -40,7 +16,6 @@ public class SortingInAscendingArrayList_ {
 
     public static void SortingArrayListAsc(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
-
             for (int j = 0; j < list.size(); j++) {
                 if (list.get(i) < list.get(j)) {
                     Integer temp = list.get(i);
@@ -51,5 +26,7 @@ public class SortingInAscendingArrayList_ {
         }
         System.out.println(list);
     }
-     */
+
+
+
 }

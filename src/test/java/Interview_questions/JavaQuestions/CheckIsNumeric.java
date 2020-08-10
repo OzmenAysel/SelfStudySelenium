@@ -4,7 +4,7 @@ public class CheckIsNumeric {
 
     // How to verify if the String contains only digits
 
-    public static boolean isEmpty(CharSequence cs){
+    public static boolean isEmpty(CharSequence cs) {
         return cs == null || cs.length() == 0;
     }
 
@@ -15,7 +15,7 @@ public class CheckIsNumeric {
 
         int len = cs.length();
         for(int i =0; i<len; i++){
-            if(Character.isDigit(cs.charAt(i))){
+            if(!Character.isDigit(cs.charAt(i))){
                 return false;
             }
         }

@@ -13,8 +13,7 @@ public class N_UniqueIntegersThat_SumUpTo_0_Array {   //????????
 		 correct answers).
 */
     public static void main(String[] args) {
-
-        int num = 3;
+       int num = 3;
        int[] arr1 = SumUpToZero1(num);
        int[] arr2 = SumUpToZero2(num);
        int[] arr3 = SumUpToZero2(num);
@@ -24,10 +23,8 @@ public class N_UniqueIntegersThat_SumUpTo_0_Array {   //????????
     }
     //Solution:
     public static int[] SumUpToZero1(int num){
-
         int[] arr = new int[num];
         int sum =0;
-
         for(int i=0; i<num-1; i++) {
             arr[i]+=i;
             sum+=i;
@@ -38,13 +35,10 @@ public class N_UniqueIntegersThat_SumUpTo_0_Array {   //????????
 
     // Hakan abi
     public static int[] SumUpToZero2(int num) {
-
         int[] arr = new int[num];
         int sum =0;
-
         if (num % 2 == 1)
             arr[num/2] = 0;
-
         for(int i = 0; i < num/2; i++) {
             arr[i] = -(i+1);
             arr[num-1-i] = i+1;
@@ -54,13 +48,10 @@ public class N_UniqueIntegersThat_SumUpTo_0_Array {   //????????
 
     // Hakan abi
     public static int[] SumUpToZero3(int num) {
-
         int[] arr = new int[num];
         int sum =0;
-
         if (num % 2 == 1)
             arr[num/2] = 0;
-
         for(int i = 0; i < num-1; i++) {
             arr[i] = i+1;
             sum+= i+1;

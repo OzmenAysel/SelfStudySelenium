@@ -3,7 +3,7 @@ package Interview_questions.JavaQuestions;
 import java.util.Arrays;
 
 public class ConcatTwoArrays {
-  //  Write a return method that can concate two arrays
+  //  Write a return method that can concat two arrays
 
     public static void main(String[] args) {
         int[] arr1 ={1,2,3,9};

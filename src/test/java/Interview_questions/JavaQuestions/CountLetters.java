@@ -4,7 +4,7 @@ public class CountLetters {
 
     public static void main(String[] args) {
 
-        String str = "levell";
+        String str = "leeeevell";
         String result = "";
         for(int i=0; i<str.length(); i++) {
             if(result.contains(str.charAt(i)+""))

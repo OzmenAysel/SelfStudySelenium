@@ -9,7 +9,7 @@ public class ArrayListIteration {
     // DIFFERENT WAYS OF ITERATING AN AArrayList
     public static void main(String[] args) {
 
-        ArrayList<String> family = new ArrayList<String>();
+        ArrayList<String> family = new ArrayList<>();
         family.add("Aysel Aysel");
         family.add("Kadir Kadir Kadir");
         family.add("Zeynep Zeynep");
@@ -18,7 +18,7 @@ public class ArrayListIteration {
         System.out.println(family); // [Aysel Aysel, Kadir Kadir Kadir, Zeynep Zeynep, Bera Bera Bera Bera]
 
         // 1.using java 8 --> for each loop with lambda expression
-        System.out.println("======= 1- 1print using for each with lambda expression in java 8 ========");
+        System.out.println("======= 1- print using for each with lambda expression in java 8 ========");
         family.forEach(each ->{
             System.out.println(each);
         });
