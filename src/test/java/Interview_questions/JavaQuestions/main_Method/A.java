@@ -6,5 +6,7 @@ public class A {
         System.out.println("A--main method"); // A--main method
        // B.main(args); //   B--main method
 
+
+
     }
 }
