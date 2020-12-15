@@ -2,7 +2,7 @@ package Interview_questions.JavaQuestions;
 
 import java.util.*;
 
-public class APractice_1 {
+public class AAPractice_1 {
 
 
     public static void main(String[] args) {
