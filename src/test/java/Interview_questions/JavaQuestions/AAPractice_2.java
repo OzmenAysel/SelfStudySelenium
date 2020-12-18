@@ -1,8 +1,6 @@
 package Interview_questions.JavaQuestions;
 
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 public class AAPractice_2 {
 
@@ -16,7 +14,100 @@ public class AAPractice_2 {
                 //        divideTwoNum(8,0);
 //        System.out.println(FINRA(15));
                 //        swapNum(10,5);
+//        System.out.println(consecutiveNumbers(24));
+//        consecutiveNumbers(24);
+                //        ArrayList<String> list = new ArrayList<>(Arrays.asList("Ahmed", "John", "Aysel","Eric", "Ahmed"));
+                //        removeAhmed(list);
+//       ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 2, 500, 3, 4, 5, 6,309, 90, 25, 1000, 0));
+//        removeGraterThan100(list);
+
     }
+
+
+    public static void removeGraterThan100(ArrayList<Integer> list){
+//        list.removeIf(p -> p>100 );
+//        System.out.println(list);
+//              OR
+//        ArrayList<Integer> result = new ArrayList<>();
+//       for(int each: list){
+//           if(each<100) {
+//               result.add(each);
+//           }
+//       }
+//       list=result;
+//        System.out.println(list);
+//              OR
+//        Iterator<Integer> it = list.iterator();
+//        while(it.hasNext()){
+//            if(it.next()>100) {
+//                it.remove();
+//                System.out.println(list);
+//            }
+//    }
+//              OR
+        for(Iterator<Integer>  it=list.iterator(); it.hasNext();){
+            if(it.next()>100){
+                it.remove();
+            }
+        }
+        System.out.println(list);
+    }
+
+
+    public static void removeAhmed(ArrayList<String> list){
+//    list.removeAll(Arrays.asList("Ahmed"));
+//    System.out.println(list);
+//        OR
+//        list.removeIf(s -> s.equals("Ahmed"));
+//        System.out.println(list);
+//                OR
+        for( ListIterator<String> it = list.listIterator(); it.hasNext(); ){
+            if(it.next().equals("Ahmed")){
+                it.remove();
+            }
+        }
+        System.out.println(list);
+    }
+
+    public static void consecutiveNumbers(int num ) {
+
+        for (int i = 1; i <= num; i++) {
+            if (i % 2 == 0 || i % 3 == 0 || i % 5 == 0) {
+                if (i % 2 == 0)
+                    System.out.print("Codility");
+                if (i % 3 == 0)
+                    System.out.print("Test");
+                if (i % 5 == 0)
+                    System.out.print("Coders");
+                System.out.println();
+            } else {
+                System.out.println(num);
+            }
+        }
+    }
+//    public static String consecutiveNumbers(int num ) {
+//        String result = "";
+//        for (int i = 1; i <= num; i++) {
+//            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+//                result += "CodilityTestCoders\n";
+//            }else if (i % 2 == 0 && i % 3 == 0) {
+//                result += "CodilityTest\n";
+//            }else if (i % 2 == 0 &&  i % 5 == 0) {
+//                result += "CodilityCoders\n";
+//            }else if(i % 3 == 0 && i % 5 == 0) {
+//                result += "TestCoders\n";
+//            }else if (i % 2 == 0 ) {
+//                result += "Codility\n";
+//            }else if(i % 3 == 0) {
+//                result += "Test\n";
+//            }else if(i % 5 == 0){
+//                result += "Coders\n";
+//            }else{
+//                result+=i+"\n";
+//            }
+//        }
+//        return result + " ";
+//    }
 
     public static void swapNum(int a, int b){ // 10 5
         a = a+b; // 15
