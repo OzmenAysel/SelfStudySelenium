@@ -4,7 +4,7 @@ package Interview_questions.JavaQuestions;
 
 import java.util.Arrays;
 
-public class FirstTwoMaxNumber_Array {
+public class MaxTwoNumber_Array {
 
     public static void main(String[] args) {
         int[] numbers ={1,67,8,90,333,86,2,3};

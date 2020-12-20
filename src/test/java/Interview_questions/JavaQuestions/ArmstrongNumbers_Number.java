@@ -14,7 +14,7 @@ public class ArmstrongNumbers_Number {
         System.out.println(Math.pow(2, 2));
     }
 
-    public  static  boolean ArmStrongNumber1(int num) {//153 => 27+125+1=153
+    public  static  boolean ArmStrongNumber1(int num) {//153 => 153 = 1+125+27
       int a = 0, b = 0, c = num;
       while (num > 0) {//0
           a = num % 10;//1

@@ -10,6 +10,7 @@ public class Palindrome_Number {
 
     }
 
+
     public static boolean palindromeNum(int number){
         String str = Integer.toString(number);
         String reverse = "";
