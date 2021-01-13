@@ -6,7 +6,7 @@ public class Factorial {
         // 1=1   fac(0)=1 (always)
         //   System.out.println(factorial1(0)); // 1
         //  System.out.println(factorial1(5)); // 120
-        //  System.out.println(factorial2(5)); // 120
+          System.out.println(factorial2(5)); // 120
 
     }
 

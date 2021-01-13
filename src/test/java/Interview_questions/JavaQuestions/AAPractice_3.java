@@ -1,7 +1,6 @@
 package Interview_questions.JavaQuestions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class AAPractice_3 {
 
@@ -22,7 +21,105 @@ public class AAPractice_3 {
                 //        int[] arr2 ={4,5,6,7};
                 //        System.out.println(concatTwoArrays1(arr1,arr2));
                 //        System.out.println(Arrays.toString(concatTwoArrays2(arr1,arr2)));
+//        countLetters("leeeeevell");
+//        String str = "Java JavaScript Ruby C Python Java C";
+//        findDuplicateInString(str);
+                //        String[] arr = {"Java", "JavaScript", "Ruby", "C", "Python", "Java", "C"};
+                //        findDuplicateInArray(arr);
+//        int[] arr = {3,60,35,2,45,320,5};
+//        bubbleSort(arr);
+
+        int[] arr1 = {1,2,3,4,5};
+        int[] arr2 = {2,3,4,5,6};
+        findUnique(arr1,arr2);
         }
+
+    public static void findUnique(int[] arr1, int[] arr2){
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int each:arr1){
+            list.add(each);
+        }
+        for(int each:arr2){
+            list.add(each);
+        }
+        Set<Integer> unique = new HashSet<Integer>();
+        for(int each:list){
+            unique.add(each);
+        }
+        System.out.println(unique);
+
+    }
+    public static void bubbleSort(int[] arr){
+        int temp =0;
+        for(int i=0; i<arr.length; i++){
+            for(int j=1; j<arr.length-1; j++){
+                if(arr[j-1]>arr[j]){
+                    temp+=arr[j-1]; // swap
+                    arr[j-1]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+         System.out.println(Arrays.toString(arr));
+        }
+    public static void findDuplicateInArray(String[] arr){
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = i + 1; j < arr.length; j++) {
+//                if(arr[i].equals(arr[j])){
+//                    System.out.print(arr[i]+" ");
+//                }
+//            }
+//        }
+
+        Set<String> set = new HashSet<>();
+        for(String each: arr){
+            if(!set.add(each)){
+                System.out.print(each+" ");
+            }
+        }
+
+
+    }
+        public static void findDuplicateInString(String str){
+//        String[] word = str.trim().split("\\s+");
+//        int count =0;        // "\\s+" fazla bosluklari onemsemez
+//        for(int i=0; i<word.length; i++){
+//            if(word[i].equalsIgnoreCase("Java")){
+//                count++;
+//            }
+//        }
+//            System.out.println(count);
+                 //OR
+//            String[] word = str.trim().split("\\s+");
+//            HashSet<String> set = new HashSet<String>();
+//            String result = "";
+//            for(String each : word){
+//                if(!set.add(each)){
+//                    result+=each+" ";
+//                }
+//                }
+//            System.out.println(result);
+            //OR
+        }
+
+
+        public static void countLetters(String str){
+        String result = "";
+            for(int i=0; i<str.length(); i++) {
+                if(result.contains(str.charAt(i)+""))
+                    continue;
+                    int count =0;
+                    for(int j=0; j<str.length(); j++) {
+                        if (str.charAt(i) == str.charAt(j))
+                            count++;
+                    }
+                        System.out.println(str.charAt(i)+" --> "+ count);
+                        result+=str.charAt(i);
+                }
+            }
+
+
+
 
 //        public static ArrayList<Integer> concatTwoArrays1(int[] arr1, int[] arr2){
 //        ArrayList<Integer> list = new ArrayList<>();

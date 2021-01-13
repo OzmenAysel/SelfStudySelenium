@@ -24,5 +24,10 @@ public class ScrollDown {
         //ScrollUp
         js.executeScript("window.scrollBy(0,-250)", "");  // OR   js.executeScript("scroll(0,-250)");
 
+       //This will scroll the page Horizontally till the element is found
+//        js.executeScript("arguments[0].scrollIntoView();", Element);
+
+
+
     }
 }

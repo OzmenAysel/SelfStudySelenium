@@ -7,8 +7,8 @@ public class Palindrome_String {
         String str = "level";
 
         // System.out.println(isPalindrome1(str));
-        //  isPalindrome2("str");
-        isPalindrome3(str);
+        isPalindrome2("str");
+       // isPalindrome3(str);
         // System.out.println(isPalindromeWithCharAt(str));
     }
 

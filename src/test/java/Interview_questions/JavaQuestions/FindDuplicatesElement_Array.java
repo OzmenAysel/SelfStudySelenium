@@ -12,9 +12,10 @@ public class FindDuplicatesElement_Array {
     public static void main(String[] args) {
 
         String[] names ={"Java", "JavaScript", "Ruby", "C", "Python", "Java", "C"};
+//        FindDupElements(names);
+//        FindDupElements2(names);
+//        FindDupElements3(names);
         FindDupElements(names);
-        FindDupElements2(names);
-        FindDupElements3(names);
 
     }
 

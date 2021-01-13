@@ -2,17 +2,19 @@ package Interview_questions.JavaQuestions;
 
 // Albert
 
+import java.util.Arrays;
+
 public class BubbleSort {
 
- // Current element is compared with the next element. If current element is grater than the next element, it is swapped.
+ // Current element is compared with the next element. If current element is greater than the next element, it is swapped.
 
     public static void main(String[] args) {
        int[] array = {3,60,35,2,45,320,5};
        bubbleSort(array);
-        System.out.println("Array After Bubble Sort");
-        for(int i = 0; i < array.length; i++){
-            System.out.print(array[i] + " ");
-        }
+//        System.out.println("Array After Bubble Sort");
+//        for(int i = 0; i < array.length; i++){
+//            System.out.print(array[i] + " ");
+//        }
     }
 
     public static void bubbleSort(int[] arr){
@@ -26,5 +28,7 @@ public class BubbleSort {
                 }
             }
         }
+        System.out.println(Arrays.toString(arr));
     }
+
 }

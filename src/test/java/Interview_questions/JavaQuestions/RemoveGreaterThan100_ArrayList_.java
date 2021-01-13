@@ -2,7 +2,7 @@ package Interview_questions.JavaQuestions;
 
 import java.util.*;
 
-public class RemoveSomeValues_ArrayList_ {
+public class RemoveGreaterThan100_ArrayList_ {
 
     // Given a list of Integers 1, 2, 3, 4, 5, 6 ....etc. remove all values greater than 100.
 

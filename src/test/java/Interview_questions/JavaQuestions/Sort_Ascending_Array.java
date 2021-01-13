@@ -15,6 +15,21 @@ Ex:	int[] arr = {10, 9, 8, 7};
         System.out.println(Arrays.toString(Sort1(arr)));
       //  System.out.println(Arrays.toString(Sort2(arr)));
        // System.out.println(Arrays.toString(Sort3(arr)));
+        bubbleSort(arr);
+    }
+
+    public static void bubbleSort(int[] arr){
+        int temp = 0;
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 1; j < arr.length-i; j++){  // arr.length   de calisiyor
+                if(arr[j-1] > arr[j]){
+                    temp = arr[j-1]; // swap element
+                    arr[j-1] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr));
     }
 
     // min value of list

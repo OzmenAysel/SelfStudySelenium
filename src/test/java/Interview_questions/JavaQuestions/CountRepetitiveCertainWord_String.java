@@ -11,17 +11,18 @@ public class CountRepetitiveCertainWord_String {
 
       //   String[] names ={"Java", "JavaScript", "Ruby", "C", "Python", "Java", "C"};
         String str = "Aysel     Aysel Saadet     Fatma Fatma     fatma";
-     //   FindDupElements(str);
-        FindDupElements2(str);
-        //FindDupElements3(str);
-
-        System.out.println("Finding Aysel");
-        System.out.println(str.matches(".*Aysel.*")); // true
-        System.out.println(str.matches(".*Bera.*"));  // false
+//        FindDupLetters(str);
+//        FindDupElements2(str);
+//        //FindDupElements3(str);
+        FindDupElements4(str);
+//
+//        System.out.println("Finding Aysel");
+//        System.out.println(str.matches(".*Aysel.*")); // true
+//        System.out.println(str.matches(".*Bera.*"));  // false
     }
 
 
-    public static void FindDupElements(String str) {  // worst approach  0(nxn) time complexity
+    public static void FindDupLetters(String str) {  // worst approach  0(nxn) time complexity
         String[] words = str.trim().split("\\s+"); // Fazla bosluklarin onemsemez
         int count = 0;
         for (int i = 0; i < words.length; i++) {
@@ -55,11 +56,13 @@ public class CountRepetitiveCertainWord_String {
         public static void FindDupElements4(String str) {     // ??????
         String[] words = str.split("\\s");
         HashSet<String> set = new HashSet<String>();
-        for (String each : words) {
-            if (!set.add(each)) {
-                System.out.println("Duplicate Element is : " + each);
+            String result = "";
+            for(String each : words){
+                if(!set.add(each)){
+                    result+=each+" ";
+                }
             }
-        }
+            System.out.println(result);
 
     }
 

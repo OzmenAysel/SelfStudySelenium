@@ -24,6 +24,7 @@ public class Find_Lenght_WithoutUsing_Length {
         System.out.println(count1);
 
 
+
         // solution 2
         char[] ch = str.toCharArray();
         int count =0;
