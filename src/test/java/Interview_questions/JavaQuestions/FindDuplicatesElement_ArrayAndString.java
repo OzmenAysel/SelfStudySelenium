@@ -7,7 +7,7 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.util.*;
 
-public class FindDuplicatesElement_Array {
+public class FindDuplicatesElement_ArrayAndString {
 
     public static void main(String[] args) {
 
