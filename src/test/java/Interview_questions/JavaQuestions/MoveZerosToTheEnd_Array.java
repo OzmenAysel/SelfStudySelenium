@@ -12,13 +12,30 @@ public class MoveZerosToTheEnd_Array {
 //    output: [1, 2, 3, 4, 0, 0, 0, 0]
 
     //    Solution:
+
     public static void main(String[] args) {
-        int[] arr = {1, 0, 2, 0, 3, 0, 4, 0};
-        System.out.println(Arrays.toString(moveZeros(arr)));
-        System.out.println("============================");
-        System.out.println(Arrays.toString(moveZeros2(arr)));
-        System.out.println("============================");
-        System.out.println(Arrays.toString(moveZeros3(arr)));
+        int[] arr = {10,10,20,30,40};
+
+       // my solution
+//        ArrayList<Integer> list = new ArrayList<>();
+//        int[] arr2 = new int[arr.length];
+//
+//        for(int each: arr) {
+//            if (each != 0) {
+//                list.add(each);
+//            }
+//        }
+//        for(int i=0; i<list.size(); i++){
+//            arr2[i]+=list.get(i);
+//        }
+//        System.out.println(Arrays.toString(arr2));
+
+
+//        System.out.println(Arrays.toString(moveZeros(arr)));
+//        System.out.println("============================");
+//        System.out.println(Arrays.toString(moveZeros2(arr)));
+//        System.out.println("============================");
+//        System.out.println(Arrays.toString(moveZeros3(arr)));
     }
 
     public static int[] moveZeros(int[] arr) {
